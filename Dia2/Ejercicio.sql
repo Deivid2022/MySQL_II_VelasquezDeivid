@@ -227,22 +227,19 @@ CALL listar_departamentos_desc();
 -- alfabética tendiendo en cuenta en primer lugar sus apellidos y luego su
 -- nombre.
 DELIMITER //
-CREATE FUNCTION lista_empleados_ordenados() 
-RETURNS TABLE (
-    apellido1 VARCHAR(100),
-    apellido2 VARCHAR(100),
-    nombre VARCHAR(100)
-)
+
+CREATE PROCEDURE lista_empleados_orde()
 BEGIN
-    RETURN (
-        SELECT apellido1, apellido2, nombre
-        FROM empleado
-        ORDER BY apellido1, apellido2, nombre
-    );
+	SELECT apellido1, apellido2, nombre
+    FROM empleado
+    ORDER BY apellido1, apellido2, nombre;
 END //
+
 DELIMITER ;
 
-SELECT * FROM lista_empleados_ordenados();
+-- Llamado del procedimiento 
+
+CALL lista_empleados_orde();
 
 -- 16.Devuelve una lista con el nombre y el presupuesto, de los 3 departamentos que tienen mayor presupuesto.  
 DELIMITER //
