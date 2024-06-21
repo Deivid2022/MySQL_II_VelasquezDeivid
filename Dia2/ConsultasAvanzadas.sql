@@ -59,7 +59,7 @@ create function obtener_precio_producto(nombre_producto varchar(100))
 returns decimal(10,2)
 deterministic
 begin
-    declare precio_producto decimal(10,2);
+    declare precio_producto decimal(10,2);  
     select precio into precio_producto from productos
     where nombre = nombre_producto;
     return precio_producto;
