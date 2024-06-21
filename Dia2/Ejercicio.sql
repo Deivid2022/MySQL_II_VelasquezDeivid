@@ -1,11 +1,11 @@
--- Active: 1718925838869@@127.0.0.1@3306@mysql2_dia2
+-- Active: 1718972580738@@172.16.101.155@3306@mysql2_dia21
 -- ############################
 -- #### Dia # 2 - MySLQII #####
 -- ############################
 
-create database mysql2_dia2;
+create database mysql2_dia21;
 
-use mysql2_dia2;
+use mysql2_dia21;
 
 -- CREATE TABLE
 
@@ -160,8 +160,8 @@ DELIMITER //
 CREATE PROCEDURE listar_id_nif_separado()
 BEGIN 
 	SELECT id,
-			SUBSTRING(nif, 1, LENGTH(nif) - 1)AS nif_digit,
-            RIGHT(nif, 1) AS nif_letter
+	SUBSTRING(nif, 1, LENGTH(nif) - 1)AS nif_digit,
+    RIGHT(nif, 1) AS nif_letter
 	FROM empleado;
 END // 
 DELIMITER ;
@@ -227,17 +227,13 @@ CALL listar_departamentos_desc();
 -- alfabética tendiendo en cuenta en primer lugar sus apellidos y luego su
 -- nombre.
 DELIMITER //
-
 CREATE PROCEDURE lista_empleados_orde()
 BEGIN
 	SELECT apellido1, apellido2, nombre
     FROM empleado
     ORDER BY apellido1, apellido2, nombre;
 END //
-
 DELIMITER ;
-
--- Llamado del procedimiento 
 
 CALL lista_empleados_orde();
 
@@ -304,7 +300,7 @@ BEGIN
 END //
 DELIMITER ;
 
-CALL lista_empleados_desde_tercera();DELIMITER //
+CALL lista_empleados_desde_tercera(); 
 
 -- 21.Devuelve una lista con el nombre de los departamentos y el presupuesto, de
 -- aquellos que tienen un presupuesto mayor o igual a 150000 euros.
