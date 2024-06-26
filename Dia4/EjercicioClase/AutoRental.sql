@@ -1,10 +1,8 @@
--- Active: 1718925838869@@127.0.0.1@3306@mysql2_ejerciciodia4
--- ###################################
--- ##### Mysql2 - Ejercicio Dia4 #####
--- ###################################
+    -- ###################################
+    -- ##### Mysql2 - Ejercicio Dia4 #####
+    -- ###################################
 
 show databases;
-
 create database mysql2_EjercicioDia4;
 
 use mysql2_EjercicioDia4;
