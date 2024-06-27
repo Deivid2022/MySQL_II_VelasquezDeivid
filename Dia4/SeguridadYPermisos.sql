@@ -70,3 +70,5 @@ drop user 'camper'@'%'
 
 -- Solo poner permisos para que consulte una x base de datos, una y tabla y una z columna
 grant select (nombre) on mysql2_dia4.persona to 'camper'@'%';
+
+-- Desarrollado por Deivid Velasquez Gutierrez / TI: 1096701633

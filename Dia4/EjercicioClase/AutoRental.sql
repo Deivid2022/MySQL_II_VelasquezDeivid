@@ -1,6 +1,6 @@
-    -- ###################################
-    -- ##### Mysql2 - Ejercicio Dia4 #####
-    -- ###################################
+-- ###################################
+-- ##### Mysql2 - Ejercicio Dia4 #####
+-- ###################################
 
 show databases;
 create database mysql2_EjercicioDia4;
@@ -500,3 +500,4 @@ INSERT INTO alquileres (vehiculo_id, cliente_id, empleado_id, sucursal_salida_id
 (100, 100, 100, 5, 2, '2032-02-15', '2032-02-20', '2032-02-21', 450000.00, 90000.00, 5.00, 427500.00, 450000.00);
 
 
+-- Desarrollado por Deivid Velasquez Gutierrez / TI: 1096701633
