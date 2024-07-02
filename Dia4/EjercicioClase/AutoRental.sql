@@ -2,6 +2,13 @@
 -- ##### Mysql2 - Ejercicio Dia4 #####
 -- ###################################
 
+
+-- ##################################
+-- ###### Link Documentacion ########
+-- https://docs.google.com/document/d/1j4Y9b-XrK75AIInjbXPYFYvy78W4ZXc3/edit?usp=sharing&ouid=101268382515402389522&rtpof=true&sd=true
+-- ##################################
+
+
 show databases;
 create database mysql2_EjercicioDia4;
 
