@@ -71,3 +71,4 @@ select * from city where Name = 'New York';
 commit; -- Mandar cambios a produccion
 rollback; -- Revertir cambios
 
+-- Desarrollado  Gutierrez / TI: 1096701633por Deivid Velasquez
